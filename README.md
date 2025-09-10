@@ -1,4 +1,4 @@
-# Bot Telegram com Pyrogram
+# Bot Telegram
 
 Este projeto é um **bot para o Telegram** desenvolvido em **Python** utilizando a biblioteca [Pyrogram](https://docs.pyrogram.org/).  
 
