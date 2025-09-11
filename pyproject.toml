@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bot-telegram"
+version = "0.1.0"
+description = ""
+authors = ["sergio <sergio-r1@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pyrogram = "^2.0.106"
+tgcrypto = "^1.2.5"
+dotenv = "^0.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
