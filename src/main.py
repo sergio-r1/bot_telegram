@@ -1,7 +1,7 @@
 from pyrogram import Client
 
 import settings
-from src.handlers import messages
+from handlers import messages
 
 
 def build_bot() -> Client:
