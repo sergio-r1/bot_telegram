@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  bot_telegram:
+    build: .
+    container_name: telegram_bot
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app/src
+    command: python -m src.main
+    restart: unless-stopped
