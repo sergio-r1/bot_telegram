@@ -14,7 +14,22 @@ O objetivo deste projeto é servir como base de estudo para desenvolvimento de b
 ---
 ## Requisítos
 - Conta [Telegram](https://my.telegram.org/) para gerar as credenciais.
+- Credenciais necessárias ...
+
+--- 
+## Container
+Para executar o bot em um container, basta executar os seguintes comandos:
+
+- Construção do container:
+```bash
+  docker build -t bot_telegram:V0.1 .
+```
+- Rodar o container:
+```bash
+  docker run --name bot_telegram1 -d bot_telegram:V0.1
+```
+
 ---
 
-*Nota: Este README será atualizado para refletir as mudanças e melhorias. Em breve, adicionarei as seções de instalação e configuração para esse projeto.*
+*Nota: Este README será atualizado para refletir as mudanças e melhorias.*
 
