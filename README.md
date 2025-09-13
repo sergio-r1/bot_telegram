@@ -28,7 +28,10 @@ Para executar o bot em um container, basta executar os seguintes comandos:
 ```bash
   docker run --name bot_telegram1 -d bot_telegram:V0.1
 ```
-
+- Ou apenas um comando utilizando o docker compose:
+```bash
+  docker compose up --build -d
+```
 ---
 
 *Nota: Este README será atualizado para refletir as mudanças e melhorias.*
