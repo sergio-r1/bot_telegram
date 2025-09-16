@@ -1,19 +1,11 @@
-from enum import Enum
-
 from pyrogram import Client, filters
 
 __all__ = ["MessageHandler"]
 
 
-class MessageType(Enum):
-    COMMAND = "command"
-    MEDIA = "media"
-    TEXT = "text"
-
-
 class MessageHandler:
     DEFAULT_RESPONSE = "Support to {0} not implemented yet"
-    
+
     def __init__(self, client: Client):
         self.app = client
         self.setup_handlers()
@@ -32,7 +24,7 @@ class MessageHandler:
         # Text handlers
         self.app.on_message()(self.handle_text)
         self.app.on_message(filters.document)(self.handle_document)
-    
+
     async def handle_start(self, client: Client, message):
         await message.reply(self.DEFAULT_RESPONSE.format("start"))
 
@@ -56,4 +48,3 @@ class MessageHandler:
 
     async def handle_text(self, client: Client, message):
         await message.reply(self.DEFAULT_RESPONSE.format("text"))
-
