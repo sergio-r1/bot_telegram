@@ -12,6 +12,7 @@ def build_bot() -> Client:
         bot_token=settings.TELEGRAM_BOT_TOKEN
     )
     messages.MessageHandler(bot_app)
+    print("Bot started")
     return bot_app
 
 
