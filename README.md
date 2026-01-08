@@ -13,18 +13,15 @@ O objetivo deste projeto é servir como base de estudo para desenvolvimento de b
 - [Pytest](https://docs.pytest.org/en/stable/) biblioteca de testes para garantir o funcionamento esperado do bot.
 ---
 ## Credenciais
-Para gerar as credenciais, é necessário ter uma conta [telegram](https://my.telegram.org/).
+Para gerar as credenciais, é necessário ter uma conta [telegram](https://my.telegram.org/). Para gerar o **bot_name** e o **bot_token** será necessário iniciar uma conversa com o @BotFather no Telegram e enviar o comando `/newbot`.
+O BotFather irá pedir o nome desejado para o bot (exibido) e um username (terminado em bot, exemplo: meu_bot). Para obter a **api_id** e a **api_hash** será necessário acessar o site do [telegram](my.telegram.org), fazer login com o número de telefone vinculado à sua conta do Telegram.
+Após, abrir a API Development Tools e criar um novo aplicativo preenchendo os dados obrigatórios. Ao terminar, terá acesso as credenciais.
+
 - Credenciais necessárias:
   - bot_name
   - bot_token
   - api_id
   - api_hash
-
-Para gerar o **bot_name** e o **bot_token** será necessário iniciar uma conversa com o @BotFather no Telegram e enviar o comando `/newbot`.
-O BotFather irá pedir o nome desejado para o bot (exibido) e um username (terminado em bot, exemplo: meu_bot). 
-
-Para obter a **api_id** e a **api_hash** será necessário acessar o site do [telegram](my.telegram.org), fazer login com o número de telefone vinculado à sua conta do Telegram.
-Após, abrir a API Development Tools e criar um novo aplicativo preenchendo os dados obrigatórios. Ao terminar, terá acesso as credenciais.
 --- 
 ## Container
 Para executar o bot em um container, é necessário ter o docker instalado e executar os seguintes comandos dentro do diretório do projeto.
